@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Background } from "./styles";
 import HomeCard from "./HomeCard/HomeCard";
 import { ScrollView, Text } from "react-native";
+import Outgoing from "./Outgoing/Outgoing";
 
 const HomeLayout: React.FC = () => {
   return (
@@ -10,54 +11,7 @@ const HomeLayout: React.FC = () => {
       <Container>
         <HomeCard />
       </Container>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
-        <Text>Testando</Text>
+      <Outgoing />
     </Background>
   );
 };
