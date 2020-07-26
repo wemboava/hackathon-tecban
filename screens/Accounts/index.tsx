@@ -6,7 +6,7 @@ import Button from '../../components/Button';
 
 import { View, Dimensions } from 'react-native';
 
-import { Container, CardsContainer, Card, ChartCard, CreateAccountButton, CreateAccountButtonText } from './styles';
+import { Container, CardsContainer, Card, ChartCard, CreateAccountButton, CreateAccountButtonText, Title } from './styles';
 
 export default function Accounts() {
   const carouselRef = useRef(null);
@@ -30,7 +30,9 @@ export default function Accounts() {
 
   return <Container>
     <CardsContainer>
-    
+    <View style={{ justifyContent:'center', alignItems: 'center', }}>
+      <Title>Cartões</Title>
+    </View>
       <View style={{ flex: 1, flexDirection:'row', justifyContent: 'center', }}>
         <Carousel
           ref={carouselRef}

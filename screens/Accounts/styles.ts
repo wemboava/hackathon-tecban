@@ -13,12 +13,12 @@ export const CardsContainer = styled.View`
   width: 100%;
   height: 400px;
   background-color: #5D0DE0;
-  padding: 60px;
+  padding: 20px 20px 20px 40px;
 `;
 
 export const Card = styled.Image`
   width: 250px;
-  height: 320px;
+  height: 300px;
 `;
 
 export const ChartCard = styled.Image`
@@ -42,4 +42,11 @@ export const CreateAccountButton = styled.TouchableOpacity`
 export const CreateAccountButtonText = styled.Text`
   font-size: 18px;
   color: #5D0DE0;
+`;
+
+export const Title = styled.Text`
+  margin: 40px 0 10px 0;
+  font-size: 20px;
+  color: white;
+  font-family: Inter_500Medium;
 `;
