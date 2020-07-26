@@ -13,6 +13,8 @@ import BottomTabNavigator from "./BottomTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
 import { AppProvider } from "../contexts/main";
 import { useAuthContext, AuthProvider } from "../contexts/auth";
+import Login from '../screens/Login/index';
+import Register from '../screens/Register/index';
 
 export default function Navigation({
   colorScheme,
@@ -47,12 +49,14 @@ function RootNavigator() {
       {logged ? (
         <Stack.Screen name="Root" component={BottomTabNavigator} />
       ) : (
+        <Stack.Screen name="Login" component={Login} />
+        )}
+        <Stack.Screen name="Register" component={Register} />
         <Stack.Screen
           name="NotFound"
           component={NotFoundScreen}
           options={{ title: "Oops!" }}
         />
-      )}
     </Stack.Navigator>
   );
 }
