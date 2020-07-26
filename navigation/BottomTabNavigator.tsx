@@ -13,8 +13,10 @@ import {
   HomeParamList,
   ProfileParamList,
   FinanceParamList,
+  AccountsParamList,
 } from "../types";
 import Finance from "../screens/Finance/Finance";
+import Accounts from "../screens/Accounts";
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -23,7 +25,7 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Home"
+      initialRouteName="Accounts"
       tabBarOptions={{
         activeTintColor: Colors[colorScheme].tint,
         showLabel: false,
@@ -48,6 +50,15 @@ export default function BottomTabNavigator() {
         options={{
           tabBarIcon: ({ color }) => (
             <MoneyIcon name="chart-pie" color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name="Accounts"
+        component={AccountsNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="md-card" size={24} color={color} />
           ),
         }}
       />
@@ -121,5 +132,23 @@ function FinanceNavigator() {
         }}
       />
     </FinanceStack.Navigator>
+  );
+}
+
+const AccountsStack = createStackNavigator<AccountsParamList>();
+
+function AccountsNavigator() {
+  const colorScheme = useColorScheme();
+
+  return (
+    <AccountsStack.Navigator>
+      <AccountsStack.Screen
+        name="AccountsScreen"
+        component={Accounts}
+        options={{
+          headerShown: false,
+        }}
+      />
+    </AccountsStack.Navigator>
   );
 }
