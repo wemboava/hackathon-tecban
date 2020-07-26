@@ -4,6 +4,7 @@ import ProfileCard from "../../ProfileLayout/ProfileCard/ProfileCard";
 
 export const Container = styled.View`
   padding: 20px;
+  background-color: #F2F6F9;
 `;
 
 export const Title = styled.Text`

@@ -9,6 +9,7 @@ export type BottomTabParamList = {
   Home: undefined;
   Profile: undefined;
   Finance: undefined;
+  Accounts: undefined;
 };
 
 export type HomeParamList = {
@@ -21,4 +22,8 @@ export type ProfileParamList = {
 
 export type FinanceParamList = {
   FinanceScreen: undefined;
+};
+
+export type AccountsParamList = {
+  AccountsScreen: undefined;
 };
