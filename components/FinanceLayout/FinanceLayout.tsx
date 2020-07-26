@@ -2,27 +2,27 @@ import React from "react";
 
 import {
   Container,
-  Card,
+  Background,
   Title,
+  Total,
   Money,
-  MoneyInfo,
-  StyledIcon,
-  SeeMore,
-  SubTitle,
+  GraphContainer,
 } from "./styles";
-
-interface IconProps {
-  name: string;
-  size: number;
-}
-
-const EntypoIcon: React.FC<IconProps> = ({ name, size }) => {
-  return <StyledIcon name={name} size={size} color="white" />;
-};
+import Graph from "../Graph";
+import History from "../History/History";
 
 export default function FinanceLayout() {
   return (
-    <Container>
-    </Container>
+    <Background>
+      <Container>
+        <Title>Histórico</Title>
+        <GraphContainer>
+          <Graph />
+          <Total>Total</Total>
+          <Money>R$ 12.000,34</Money>
+        </GraphContainer>
+      </Container>
+      <History />
+    </Background>
   );
 }
