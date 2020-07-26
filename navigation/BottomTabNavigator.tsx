@@ -34,6 +34,7 @@ export default function BottomTabNavigator() {
           color: Colors[colorScheme].text,
         },
       }}
+      
     >
       <BottomTab.Screen
         name="Home"
