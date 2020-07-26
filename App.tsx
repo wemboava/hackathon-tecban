@@ -7,7 +7,7 @@ import useColorScheme from "./hooks/useColorScheme";
 import Navigation from "./navigation";
 import { AppLoading } from "expo";
 
-import { useFonts, Inter_700Bold } from "@expo-google-fonts/inter";
+import { useFonts, Inter_700Bold, Inter_500Medium } from "@expo-google-fonts/inter";
 import { Cabin_500Medium, Cabin_400Regular, Cabin_700Bold } from "@expo-google-fonts/cabin";
 
 export default function App() {
@@ -16,6 +16,7 @@ export default function App() {
 
   let [fontsLoaded] = useFonts({
     Inter_700Bold,
+    Inter_500Medium,
     Cabin_400Regular,
     Cabin_500Medium,
     Cabin_700Bold,

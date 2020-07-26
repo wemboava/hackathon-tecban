@@ -55,7 +55,7 @@ export const GoalsButton = styled.TouchableOpacity`
   margin-top: 30px;
   align-self: center;
   height: 45px;
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
