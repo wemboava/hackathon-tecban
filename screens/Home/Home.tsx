@@ -1,9 +1,6 @@
 import * as React from "react";
-import { StyleSheet } from "react-native";
-
-import EditScreenInfo from "../../components/EditScreenInfo";
-import { Text, View } from "../../components/Themed";
+import HomeLayout from "../../components/HomeLayout/HomeLayout";
 
 export default function Home() {
-  return <View></View>;
+  return <HomeLayout />;
 }

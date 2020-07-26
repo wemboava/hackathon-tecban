@@ -4,11 +4,16 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
 
-import Colors from "../constants/Colors";
+import Colors, { mainColor } from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import Home from "../screens/Home/Home";
 import Profile from "../screens/Profile/Profile";
-import { BottomTabParamList, HomeParamList, ProfileParamList, FinanceParamList } from "../types";
+import {
+  BottomTabParamList,
+  HomeParamList,
+  ProfileParamList,
+  FinanceParamList,
+} from "../types";
 import Finance from "../screens/Finance/Finance";
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -22,23 +27,27 @@ export default function BottomTabNavigator() {
       tabBarOptions={{
         activeTintColor: Colors[colorScheme].tint,
         showLabel: false,
+        style: {
+          backgroundColor: Colors[colorScheme].tabIconSelected,
+          color: Colors[colorScheme].text,
+        },
       }}
     >
-      <BottomTab.Screen
-        name="Finance"
-        component={FinanceNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <MoneyIcon name="money-check-alt" color={color} />
-          ),
-        }}
-      />
       <BottomTab.Screen
         name="Home"
         component={HomeNavigator}
         options={{
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="ios-home" color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name="Finance"
+        component={FinanceNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <MoneyIcon name="chart-pie" color={color} />
           ),
         }}
       />
@@ -68,12 +77,14 @@ function MoneyIcon(props: { name: string; color: string }) {
 const HomeStack = createStackNavigator<HomeParamList>();
 
 function HomeNavigator() {
+  const colorScheme = useColorScheme();
+
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
         name="HomeScreen"
         component={Home}
-        options={{ headerTitle: "Home" }}
+        options={{ headerShown: false }}
       />
     </HomeStack.Navigator>
   );
@@ -87,8 +98,10 @@ function ProfileNavigator() {
       <ProfileStack.Screen
         name="ProfileScreen"
         component={Profile}
-        options={{ headerTitle: "Profile" }}
-        />
+        options={{
+          headerShown: false,
+        }}
+      />
     </ProfileStack.Navigator>
   );
 }
@@ -96,12 +109,16 @@ function ProfileNavigator() {
 const FinanceStack = createStackNavigator<FinanceParamList>();
 
 function FinanceNavigator() {
+  const colorScheme = useColorScheme();
+
   return (
     <FinanceStack.Navigator>
       <FinanceStack.Screen
         name="FinanceScreen"
         component={Finance}
-        options={{ headerTitle: "Profile" }}
+        options={{
+          headerShown: false,
+        }}
       />
     </FinanceStack.Navigator>
   );
