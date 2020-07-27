@@ -1,6 +1,5 @@
 <p align="center">
    <img src="./assets/images/logo.png" width="200"/>
-</p>
 
 # Bússola Financeira
 
@@ -10,11 +9,13 @@
 [![Contributors](https://img.shields.io/github/contributors/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/graphs/contributors)
 
 <br />
+<p align="center">
 <div float="left">
-<p align="center"><img width="400px" src="./docs/image1.jpeg"/></p>
-<p align="center"><img width="400px" src="./docs/image2.jpeg"/></p>
-<p align="center"><img width="400px" src="./docs/image3.jpeg"/></p>
+<img width="200px" left="30px" src="./docs/image1.jpeg"/>
+<img width="200px" src="./docs/image2.jpeg"/>
+<img width="200px" src="./docs/image3.jpeg"/>
 </div>
+</p>
 
 > There ain't such thing as free lunch!
 
@@ -31,10 +32,10 @@
 # :star: Features
 
 - Sugestões de economia personalizadas baseadas no seu perfil financeiro
-- Investimento automático do arredondamento de pagamentos que terminem em centavos  
+- Investimento automático do arredondamento de pagamentos que terminem em centavos
 - Análise e do seu histórico financeiro e projeção futura de ganhos/economias.
 - Interação via Assistentes Virtuais (Google Assistant/Alexa)
-- Cruzamento de dados de pessoas com o mesmo perfil para estimar investimentos/economias 
+- Cruzamento de dados de pessoas com o mesmo perfil para estimar investimentos/economias
 
 **Obs: O backend do projeto ainda está em construção.**
 
@@ -53,7 +54,6 @@ Para iniciar o **app** em modo de desenvolvimento é só:
 `yarn dev`
 
 Obs.: Você precisa ter a [expo-cli](https://docs.expo.io/workflow/expo-cli) instalada globalmente no seu npm.
-
 
 # :bug: Issues
 
