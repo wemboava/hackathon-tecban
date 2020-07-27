@@ -25,7 +25,7 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="NewAccount"
+      initialRouteName="Login"
       tabBarOptions={{
         activeTintColor: Colors[colorScheme].tint,
         showLabel: false,

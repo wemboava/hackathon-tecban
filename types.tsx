@@ -4,6 +4,7 @@ export type RootStackParamList = {
   Login: undefined;
   Register: undefined;
   NewAccount: undefined;
+  Goals: undefined;
 };
 
 export type BottomTabParamList = {
@@ -11,6 +12,7 @@ export type BottomTabParamList = {
   Profile: undefined;
   Finance: undefined;
   Accounts: undefined;
+  Login: undefined;
 };
 
 export type HomeParamList = {

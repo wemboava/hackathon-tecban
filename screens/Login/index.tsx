@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -19,24 +19,26 @@ export default function TabOneScreen() {
   const navigation = useNavigation();
 
   return (
-    <Container>
-      <View style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: '#F2F6F9' }}>
-        <Image source={require('../../assets/images/logo.png')} />
-      </View>
-      <Text style={styles.title}>Login</Text>
-      <InputWrapper placeholder="E-mail" />
-      <InputWrapper placeholder="Senha" />
-      <Button
-        onPress={() => {}}
-        primary
-      >Entrar</Button>
+    <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined} enabled>
+      <Container>
+        <View style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: '#F2F6F9' }}>
+          <Image source={require('../../assets/images/logo.png')} />
+        </View>
+        <Text style={styles.title}>Login</Text>
+        <InputWrapper placeholder="E-mail" />
+        <InputWrapper placeholder="Senha" />
+        <Button
+          onPress={() => navigation.navigate('Root')}
+          primary
+        >Entrar</Button>
 
-      <CreateAccountButton onPress={() => navigation.navigate('Register')}>
-        <CreateAccountButtonText>
-          Criar uma conta
-        </CreateAccountButtonText>
-      </CreateAccountButton>
-    </Container>
+        <CreateAccountButton onPress={() => navigation.navigate('Register')}>
+          <CreateAccountButtonText>
+            Criar uma conta
+          </CreateAccountButtonText>
+        </CreateAccountButton>
+      </Container>
+    </KeyboardAvoidingView>
   );
 }
 

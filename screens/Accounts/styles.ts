@@ -11,18 +11,18 @@ export const Container = styled.View`
 
 export const CardsContainer = styled.View`
   width: 100%;
-  height: 400px;
+  height: 380px;
   background-color: #5D0DE0;
-  padding: 20px 20px 20px 40px;
+  padding: 0px 20px 20px 40px;
 `;
 
 export const Card = styled.Image`
-  width: 250px;
-  height: 300px;
+  width: 240px;
+  height: 290px;
 `;
 
 export const ChartCard = styled.Image`
-  flex: 1;
+  /* flex: 1; */
 `;
 
 export const CreateAccountButton = styled.TouchableOpacity`

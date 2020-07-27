@@ -32,7 +32,7 @@ export default function App() {
     return (
       <SafeAreaProvider>
         <Navigation colorScheme={colorScheme} />
-        <StatusBar style="light" />
+        <StatusBar style="light" backgroundColor="#5D0CE1" />
       </SafeAreaProvider>
     );
   }
