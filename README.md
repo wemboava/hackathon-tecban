@@ -23,11 +23,16 @@
 
 # :pushpin: Summary
 
+- [Descrição](#pencil-description)
 - [Features](#rocket-features)
-- [Installation](#construction_worker-installation)
-- [Getting Started](#runner-getting-started)
+- [Instalação](#construction_worker-installation)
+- [Iniciando](#runner-getting-started)
 - [Issues](#bug-issues)
 - [License](#closed_book-license)
+
+# :pencil: Descrição
+
+A **Bússola Financeira** 🧭 é o aplicativo que vai dar um **upgrade** :sparkles: na forma de você administrar o **seu dinheiro**. Ela é uma plataforma que visa traçar metas de planejamento e economia baseadas no seu perfil e histórico financeiro. Através de *Machine Learning* e *Inteligência Artificial* nós asseguramos as melhores decisões de investimento e até mesmo corte de gastos para você conseguir alcançar o seu objetivo :dart:.
 
 # :star: Features
 
@@ -39,7 +44,7 @@
 
 **Obs: O backend do projeto ainda está em construção.**
 
-# :construction_worker: Installation
+# :construction_worker: Instalação
 
 Você precisará instalar o [Node.js](https://nodejs.org/en/download/) e o [Yarn](https://yarnpkg.com/) primeiro.
 
@@ -47,7 +52,7 @@ Após isso, instale a [expo-cli](https://docs.expo.io/workflow/expo-cli) globalm
 
 `git clone https://github.com/wemboava/hackathon-tecban`;
 
-# :rocket: Getting Started
+# :rocket: Iniciando
 
 Para iniciar o **app** em modo de desenvolvimento é só:
 
@@ -61,5 +66,5 @@ Se sinta livre para **abrir um novo issue** no [Repositório da Bússola](https:
 
 # :closed_book: License
 
-Released in 2020.
+Released in 2020 for the TecBan Hackathon.
 This project is under the [MIT license](https://github.com/https://github.com/wemboava/hackathon-tecban/LICENSE).
