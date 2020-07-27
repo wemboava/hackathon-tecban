@@ -1,16 +1,13 @@
 <p align="center">
    <img src="./assets/images/logo.png" width="200"/>
 
-# Bússola Financeira
 
-<p align="center">
+# Bússola Financeira
 
 [![Languages](https://img.shields.io/github/languages/count/matheussousaf/chess?color=5D0CE1&style=flat-square)](#)
 [![Stars](https://img.shields.io/github/stars/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/stargazers)
 [![Forks](https://img.shields.io/github/forks/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/network/members)
 [![Contributors](https://img.shields.io/github/contributors/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/graphs/contributors)
-
-</p>
 
 <br />
 <div float="left">
@@ -72,3 +69,5 @@ Se sinta livre para **abrir um novo issue** no [Repositório da Bússola](https:
 
 Released in 2020 for the TecBan Hackathon.
 This project is under the [MIT license](https://github.com/https://github.com/wemboava/hackathon-tecban/LICENSE).
+
+</p>
