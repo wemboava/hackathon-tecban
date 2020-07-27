@@ -3,10 +3,14 @@
 
 # Bússola Financeira
 
+<p align="center">
+
 [![Languages](https://img.shields.io/github/languages/count/matheussousaf/chess?color=5D0CE1&style=flat-square)](#)
 [![Stars](https://img.shields.io/github/stars/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/stargazers)
 [![Forks](https://img.shields.io/github/forks/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/network/members)
 [![Contributors](https://img.shields.io/github/contributors/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/graphs/contributors)
+
+</p>
 
 <br />
 <div float="left">
