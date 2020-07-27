@@ -27,6 +27,10 @@
 
 > There ain't such thing as free lunch!
 
+Se você é um jurado e está precisando baixar a solução, nós disponibilizamos uma arquivo **.apk** que pode ser baixado em:
+
+
+
 ---
 
 # :pushpin: Summary
