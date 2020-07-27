@@ -9,13 +9,13 @@
 [![Contributors](https://img.shields.io/github/contributors/matheussousaf/chess?color=5D0CE1&style=flat-square)](https://github.com/wemboava/hackathon-tecban/graphs/contributors)
 
 <br />
-<p align="center">
 <div float="left">
+<p align="center">
 <img width="200px" left="30px" src="./docs/image1.jpeg"/>
 <img width="200px" src="./docs/image2.jpeg"/>
 <img width="200px" src="./docs/image3.jpeg"/>
-</div>
 </p>
+</div>
 
 > There ain't such thing as free lunch!
 
