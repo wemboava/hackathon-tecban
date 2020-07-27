@@ -26,7 +26,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   color: #fff;
-  font-size: 25px;
+  font-size: 22px;
 `;
 
 export const ButtonStyle = styled.Button<IButton>`

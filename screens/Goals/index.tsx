@@ -15,9 +15,9 @@ export default function TabOneScreen() {
 
   return (
     <>
-      <View style={{ height: 120, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#5D0DE0', paddingTop: 40, paddingLeft: 20, paddingRight: 50 }}>
+      <View style={{ height: 90, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#5D0DE0', paddingTop: 40, paddingLeft: 20, paddingRight: 50 }}>
         <ButtonWrapper onPress={() => navigation.navigate('Profile')}>
-          <Image style={{ width: 27, height: 30, marginRight: 15 }} source={require('../../assets/images/arrow.png')} />
+          <Image style={{ width: 20, height: 23, marginRight: 15, marginTop: 5 }} source={require('../../assets/images/arrow.png')} />
         </ButtonWrapper>
         <Title>Metas</Title>
         <View />
