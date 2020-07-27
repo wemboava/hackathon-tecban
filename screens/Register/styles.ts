@@ -24,7 +24,8 @@ export const Container = styled.View`
 `;
 
 export const Image = styled.Image`
-  width: 60px;
+  width: 150px;
+  margin-bottom: 20px;
   padding: 5px;
 `;
 

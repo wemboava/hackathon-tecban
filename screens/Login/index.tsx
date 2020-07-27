@@ -27,7 +27,7 @@ export default function TabOneScreen() {
       <InputWrapper placeholder="E-mail" />
       <InputWrapper placeholder="Senha" />
       <Button
-        onPress={() => {}}
+        onPress={() => navigation.navigate('Root')}
         primary
       >Entrar</Button>
 

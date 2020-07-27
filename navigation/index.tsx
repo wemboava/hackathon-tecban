@@ -16,6 +16,7 @@ import { useAuthContext, AuthProvider } from "../contexts/auth";
 import Login from '../screens/Login/index';
 import Register from '../screens/Register/index';
 import NewAccount from '../screens/NewAccount/index';
+import Goals from '../screens/Goals/index';
 
 export default function Navigation({
   colorScheme,
@@ -43,17 +44,16 @@ function RootNavigator() {
 
   return (
     <Stack.Navigator
+      initialRouteName="Login"
       screenOptions={{
         headerShown: false,
       }}
     >
-      {logged ? (
         <Stack.Screen name="Root" component={BottomTabNavigator} />
-      ) : (
         <Stack.Screen name="Login" component={Login} />
-        )}
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="NewAccount" component={NewAccount} />
+        <Stack.Screen name="Goals" component={Goals} />
         <Stack.Screen
           name="NotFound"
           component={NotFoundScreen}

@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 interface IButton {
   primary: boolean;
@@ -18,15 +19,14 @@ export const Container = styled.View`
   width: 100%;
   flex: 1;
   padding: 30px;
-  padding-top: 180px;
+  padding-top: 40px;
   background-color: #F2F6F9;
   position: relative;
 `;
 
-export const Image = styled.Image`
-  width: 150px;
-  margin-bottom: 20px;
-  padding: 5px;
+export const Title = styled.Text`
+  color: #fff;
+  font-size: 25px;
 `;
 
 export const ButtonStyle = styled.Button<IButton>`
@@ -37,18 +37,17 @@ export const ButtonStyle = styled.Button<IButton>`
   background-color: #5D0DE0;
 `;
 
-export const CreateAccountButton = styled.TouchableOpacity`
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  padding: 16px 0 14px;
-  margin-top: 10px;
+export const ButtonWrapper = styled(RectButton)`
+  width: 30px;
+  height: 30px;
 `;
+export const ViewWrapper = styled.View`
+  width: 60%;
+  height: 50px;
+  margin: 10px 0;
 
-export const CreateAccountButtonText = styled.Text`
-  font-size: 18px;
-  color: #5D0DE0;
-  margin-left: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F6F9;
 `;

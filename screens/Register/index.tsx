@@ -23,7 +23,7 @@ export default function TabOneScreen() {
       <View style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: '#F2F6F9' }}>
         <Image source={require('../../assets/images/logo.png')} />
       </View>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Nova conta</Text>
       <InputWrapper placeholder="Nome" />
       <InputWrapper placeholder="E-mail" />
       <InputWrapper placeholder="Senha" />

@@ -1,11 +1,12 @@
 import React from "react";
 
 import { View, Text, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { Container, CardsContainer, Title, Goal, Period, ButtonWrapper } from './styles';
 
 export default function Accounts() {
-
+  const navigation = useNavigation();
   return <Container>
     <CardsContainer>
     <View style={{ justifyContent:'center', alignItems: 'center', }}>
@@ -48,7 +49,7 @@ export default function Accounts() {
       </View>
     </CardsContainer>
     <View style={{ width: '100%', justifyContent:'center', alignItems: 'center', marginTop: 10 }}>
-      <ButtonWrapper>
+      <ButtonWrapper onPress={() => navigation.navigate('Goals')}>
         <Image style={{ width: 27, height: 30, marginRight: 15 }} source={require('../../assets/images/money.png')} />
         <Text style={{ color: '#5D0DE0', fontSize: 20 }}>Realizações</Text>
       </ButtonWrapper>
