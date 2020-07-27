@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-
+import { useNavigation } from '@react-navigation/native';
 import {
   Container,
   Info,
@@ -18,6 +18,7 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const HomeCard: React.FC = () => {
+  const navigate = useNavigation()
   return (
     <Container>
       <Info>
@@ -45,7 +46,7 @@ const HomeCard: React.FC = () => {
         <Money>R$ 102.000,34</Money>
       </MoneyInfo>
       <GoalsButton activeOpacity={0.7}>
-        <GoalsText>Minhas metas</GoalsText>
+        <GoalsText onPress={() => navigate.navigate('Profile')}>Minhas metas</GoalsText>
       </GoalsButton>
     </Container>
   );

@@ -6,7 +6,7 @@ export const Background = styled.ScrollView`
 `;
 
 export const Title = styled.Text`
-  margin: 30px 0;
+  margin: 40px 0 20px 0;
   font-size: 20px;
   color: white;
   font-family: Inter_500Medium;

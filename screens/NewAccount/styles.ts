@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 interface IButton {
   primary: boolean;
@@ -23,9 +24,9 @@ export const Container = styled.View`
   position: relative;
 `;
 
-export const Image = styled.Image`
-  width: 60px;
-  padding: 5px;
+export const Title = styled.Text`
+  color: #fff;
+  font-size: 25px;
 `;
 
 export const ButtonStyle = styled.Button<IButton>`
@@ -34,4 +35,9 @@ export const ButtonStyle = styled.Button<IButton>`
   padding: 5px;
   color: #fff;
   background-color: #5D0DE0;
+`;
+
+export const ButtonWrapper = styled(RectButton)`
+  width: 30px;
+  height: 30px;
 `;
