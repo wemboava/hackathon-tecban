@@ -2,9 +2,7 @@
    <img src="./assets/images/logo.png" width="200"/>
 </p>
 
-
 # Bússola Financeira
-
 
 <p align="center">
 <div>
@@ -27,9 +25,10 @@
 
 > There ain't such thing as free lunch!
 
-Se você é um jurado e está precisando baixar a solução, nós disponibilizamos uma arquivo **.apk** que pode ser baixado em:
+Se você é um **jurado** ou quer baixar a solução, nós disponibilizamos uma arquivo **.apk** que pode ser baixado [aqui](https://drive.google.com/drive/folders/17fbCnVLj_lAa8aUmqjZJllz1QEtCucrT?usp=sharing) ou escaneie o QRCODE:
 
-
+<p align="center">
+<img width="200px" src="./docs/qrcode.png"/>
 
 ---
 
@@ -44,7 +43,7 @@ Se você é um jurado e está precisando baixar a solução, nós disponibilizam
 
 # :pencil: Descrição
 
-A **Bússola Financeira** 🧭 é o aplicativo que vai dar um **upgrade** :sparkles: na forma de você administrar o **seu dinheiro**. Ela é uma plataforma que visa traçar metas de planejamento e economia baseadas no seu perfil e histórico financeiro. Através de *Machine Learning* e *Inteligência Artificial* nós asseguramos as melhores decisões de investimento e até mesmo corte de gastos para você conseguir alcançar o seu objetivo :dart:.
+A **Bússola Financeira** 🧭 é o aplicativo que vai dar um **upgrade** :sparkles: na forma de você administrar o **seu dinheiro**. Ela é uma plataforma que visa traçar metas de planejamento e economia baseadas no seu perfil e histórico financeiro. Através de _Machine Learning_ e _Inteligência Artificial_ nós asseguramos as melhores decisões de investimento e até mesmo corte de gastos para você conseguir alcançar o seu objetivo :dart:.
 
 # :star: Features
 

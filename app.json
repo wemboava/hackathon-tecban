@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "hackathonTechban",
-    "slug": "hackathonTechban",
+    "name": "Bússola Financeira",
+    "slug": "BussolaFinanceira",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/appIcon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
