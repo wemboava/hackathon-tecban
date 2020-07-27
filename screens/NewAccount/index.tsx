@@ -1,35 +1,42 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Image } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+import { View } from '../../components/Themed';
 import Button from '../../components/Button';
 
 import {
   InputWrapper,
   Container,
-  Image,
+  Title,
+  ButtonWrapper,
 } from './styles';
 
 export default function TabOneScreen() {
   const navigation = useNavigation();
 
   return (
-    <Container>
-      <View style={{ alignItems: 'center', justifyContent: 'center', backgroundColor: '#F2F6F9' }}>
-        <Image source={require('../../assets/images/logo.png')} />
+    <>
+      <View style={{ height: 120, flexDirection: 'row',alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#5D0DE0', paddingTop: 40, paddingLeft: 20, paddingRight: 50 }}>
+        <ButtonWrapper onPress={() => navigation.navigate('Accounts')}>
+          <Image style={{ width: 27, height: 30, marginRight: 15 }} source={require('../../assets/images/arrow.png')} />
+        </ButtonWrapper>
+        <Title>Adicionar</Title>
+        <View />
       </View>
-      <Text style={styles.title}>Nova Conta</Text>
-      <InputWrapper placeholder="CPF" />
-      <InputWrapper placeholder="Agência" />
-      <InputWrapper placeholder="Conta corrente" />
-      <Button
-        onPress={() => {}}
-        primary
-      >Adicionar</Button>
-    </Container>
+      <Container>
+        {/* <Text style={styles.title}>Nova Conta</Text> */}
+        <InputWrapper placeholder="CPF" />
+        <InputWrapper placeholder="Agência" />
+        <InputWrapper placeholder="Conta corrente" />
+        <Button
+          onPress={() => {}}
+          primary
+        >Adicionar</Button>
+      </Container>
+    </>
   );
 }
 

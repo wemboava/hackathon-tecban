@@ -7,7 +7,7 @@ import * as React from "react";
 import Colors, { mainColor } from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
 import Home from "../screens/Home/Home";
-import Profile from "../screens/Profile/Profile";
+import Profile from "../screens/Profile";
 import {
   BottomTabParamList,
   HomeParamList,
@@ -25,7 +25,7 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="Accounts"
+      initialRouteName="NewAccount"
       tabBarOptions={{
         activeTintColor: Colors[colorScheme].tint,
         showLabel: false,

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { useNavigation } from '@react-navigation/native';
 
 import Carousel from 'react-native-snap-carousel';
 
@@ -10,6 +11,7 @@ import { Container, CardsContainer, Card, ChartCard, CreateAccountButton, Create
 
 export default function Accounts() {
   const carouselRef = useRef(null);
+  const navigation = useNavigation();
   const [activeIndex, setActiveIndex] = useState(0);
   
   const images = [
@@ -49,7 +51,7 @@ export default function Accounts() {
       </View>
     </CardsContainer>
     <ChartCard style={{ width: width, height: 400, flex: 1}} resizeMode={'contain'} source={require('app/assets/images/chart-card.png')} />
-    <CreateAccountButton onPress={() => {}}>
+    <CreateAccountButton onPress={() => navigation.navigate('NewAccount')}>
       <CreateAccountButtonText>
         Adicionar conta
       </CreateAccountButtonText>
